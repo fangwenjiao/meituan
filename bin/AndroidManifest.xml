@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anjoyo.meituan"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <application
+        android:name="com.anjoyo.meituan.app.AppContext"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity android:name="com.anjoyo.meituan.ui.SelectCityActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MineActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MoreActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.GroupBuyActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MerchantActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.AboutMeiTuanActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.NotificationActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MessageRemindActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.AccountActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.TicketActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.CollectActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.RecommendedActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.ShareSetActivity" >
+        </activity>
+        <activity
+            android:name="com.anjoyo.meituan.ui.GroupBuyDetailsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MerchantDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.anjoyo.meituan.ui.CheckUpdateActivity"
+            android:theme="@style/updateactivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.ObligationActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.PaidActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.VoucherActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.LotteryActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.GroupBuyImageDetailsActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MainActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MyMapActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MoreClassifyActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.TodayNewOrderActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.MovieActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.VoucherHelpActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.AmedUserNameActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.AmedPasswordActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.AddressManageActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.RegisterActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.LoginActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.SeekActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.OrderActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.PayOrderActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.OrderDetailActivity" >
+        </activity>
+        <activity android:name="com.anjoyo.meituan.ui.NewAddressActivity" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/backgroundcolor"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rl_merchant_item"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp" 
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/name_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_merchant"
+            android:text="测试_商家名"
+            android:textColor="@color/textgray"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image_merchant"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/test" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="@style/rankRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name_merchant"
+            android:layout_below="@+id/name_merchant"
+            android:layout_marginTop="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.3" />
+
+        <ImageView
+            android:id="@+id/image_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_group"
+            android:layout_toRightOf="@+id/name_merchant" 
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/address_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_merchant"
+            android:layout_alignLeft="@+id/ratingBar1"
+            android:layout_marginBottom="10dp"
+            android:maxEms="9"
+            android:text="测试_商家地址"
+           android:textColor="@color/textgray"
+            android:textSize="15sp" 
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/distance_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/address_merchant"
+            android:layout_alignBottom="@+id/address_merchant"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="3.0km"
+            android:textColor="@color/textgray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

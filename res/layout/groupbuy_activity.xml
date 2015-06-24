@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/green" >
+
+        <TextView
+            android:id="@+id/textview_meituan"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:background="@color/green"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="美团"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_city"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/textview_meituan"
+            android:background="@drawable/button_city"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="咸宁"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_search"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_city"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_map"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@id/imagebutton_search"
+            android:background="@drawable/button_city"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_action_map" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.anjoyo.meituan.myview.MyGridView
+                android:id="@+id/gridview_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:numColumns="4" 
+                android:divider="@android:color/transparent"
+                android:listSelector="#00000000"
+                >
+            </com.anjoyo.meituan.myview.MyGridView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="猜你喜欢"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <com.anjoyo.meituan.myview.MyListView
+                android:id="@+id/listview_like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:divider="@android:color/transparent"
+                android:listSelector="#00000000" >
+            </com.anjoyo.meituan.myview.MyListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/backgroundcolor"
+                >
+
+                <TextView
+                    android:id="@+id/textview_checkall"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="查看全部团购"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

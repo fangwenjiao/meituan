@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView_groupbuy_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="#00000000" >
+
+        <TextView
+            android:id="@+id/textView_groupbuy_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="沙县小吃免费吃!"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView_groupbuy_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView_groupbuy_name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="霸王餐，0元吃个痛快。在沙县小吃当土豪，就是这么简单"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>
